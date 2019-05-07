@@ -244,18 +244,19 @@ gulp.task('zip', ['minify', 'inject', 'replace', 'packageCorePlugins'], function
 gulp.task('build', ['minify', 'inject', 'replace', 'packageCorePlugins', 'zip']);
 
 var corePlugins = [
-    // "org.ekstep.conceptselector-1.1",
-    // "org.ekstep.assetbrowser-1.2",
-    // "org.ekstep.contenteditorfunctions-1.2",
-    // "org.ekstep.unitmeta-1.6",
-    // "org.ekstep.contentmeta-1.5",
-    // "org.ekstep.courseunitmeta-1.6",
-    // "org.ekstep.lessonplanunitmeta-1.5",
-    // "org.ekstep.preview-1.1",
-    // "org.ekstep.telemetry-1.0",
-    // "org.ekstep.toaster-1.0",
-    // "org.ekstep.breadcrumb-1.0",
-    // "org.ekstep.collectionkeyboardshortcuts-1.0"
+    "org.ekstep.conceptselector-1.1",
+    "org.ekstep.assetbrowser-1.2",
+    "org.ekstep.contenteditorfunctions-1.2",
+    "org.ekstep.unitmeta-1.7",
+    "org.ekstep.contentmeta-1.5",
+    "org.ekstep.courseunitmeta-1.7",
+    "org.ekstep.lessonplanunitmeta-1.5",
+    "org.ekstep.preview-1.1",
+    "org.ekstep.telemetry-1.0",
+    "org.ekstep.toaster-1.0",
+    "org.ekstep.breadcrumb-1.0",
+    "org.ekstep.collectionkeyboardshortcuts-1.0",
+    "org.ekstep.collectioneditor-1.6"
 ]
 
 gulp.task('minifyCorePlugins', function() {

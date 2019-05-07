@@ -1,12 +1,14 @@
 window.context = {
-    "contentId": "do_112598127241691136116",
-    "sid": "rctrs9r0748iidtuhh79ust993",
+    "contentId": "do_21274639304327987212211",
+    "sid": "R42JWXIknodj9e4JCdQOMZVwTmILb1Vc",
     "user": {
-        "id": "390",
-        "name": "Santhosh Vasabhaktula",
-        "email": "santhosh@ilimi.in"
+        "id": "6f324db7-32a5-4437-a451-35cf53269aaf",
+        "name": "Aditya",
+        "email": "aditya@niit.com"
     },
-    "framework": 'NCERT'
+    "framework": 'niit_tv',
+    "rootOrgId": "0127053482034872320",
+    "channel":"niit-Channel"
 };
 
 window.config = {
@@ -16,31 +18,41 @@ window.config = {
     dispatcher: 'console',
     apislug: '/action',
     nodeDisplayCriterion: {
-        contentType: ['TextBook', 'TextBookUnit']
+        contentType: ['Course', 'CourseUnit']
     },
     keywordsLimit: 500,
     editorConfig: {
         "mode": "Edit",
         "contentStatus": "draft",
         "rules": {
-            "levels": 3,
+            "levels": 7,
             "objectTypes": [{
-                "type": "TextBook",
-                "label": "Textbook",
+                "type": "Course",
+                "label": "Course",
                 "isRoot": true,
                 "editable": true,
-                "childrenTypes": ["TextBookUnit"],
+                "childrenTypes": [
+                    "CourseUnit",
+                    "Collection",
+                    "Resource"
+                ],
                 "addType": "Editor",
                 "iconClass": "fa fa-book"
-            }, {
-                "type": "TextBookUnit",
-                "label": "Textbook Unit",
+                },
+                {
+                "type": "CourseUnit",
+                "label": "Course Unit",
                 "isRoot": false,
                 "editable": true,
-                "childrenTypes": ["TextBookUnit", "Collection", "Content"],
+                "childrenTypes": [
+                    "CourseUnit",
+                    "Collection",
+                    "Resource"
+                ],
                 "addType": "Editor",
                 "iconClass": "fa fa-folder-o"
-            }, {
+                },
+                {
                 "type": "Collection",
                 "label": "Collection",
                 "isRoot": false,
@@ -48,15 +60,16 @@ window.config = {
                 "childrenTypes": [],
                 "addType": "Browser",
                 "iconClass": "fa fa-file-o"
-            }, {
-                "type": "Content",
-                "label": "Content",
+                },
+                {
+                "type": "Resource",
+                "label": "Resource",
                 "isRoot": false,
                 "editable": false,
                 "childrenTypes": [],
                 "addType": "Browser",
                 "iconClass": "fa fa-file-o"
-            }]
+                }]
         },
         "defaultTemplate": {}
     }
